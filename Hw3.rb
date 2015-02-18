@@ -6,6 +6,7 @@ class Book
     @writer = writer
 
   end
+  #The problem is here: I create the method checked_out but at line 33 gives a error of undefined method
   def checked_out
     @checked_out = false
   end
@@ -58,4 +59,3 @@ lib.checkout(book2.title)
 lib.checkout(book1.title)
 # list which Books are out
 lib.which_out?
-  end
