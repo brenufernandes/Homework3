@@ -1,14 +1,23 @@
+=begin
+Breno Fernandes de Andrade - CS270. Assignment #2
+Description: Checkout of books using class concept
+input: Book's title and name
+Output: Checkout book's name
+=end
+#The class book is used for the constructor to attribute the variable book name and the writer
 class Book
+#User the method attr_reader and attr_acessor to read and provide acessor methods for the istance variable
   attr_reader :title, :writer
-
+  attr_accessor :title, :checked_out
+#Initialize take the information of the construction and put in the variable
   def initialize(bookName,writer)
     @title = bookName
     @writer = writer
 
   end
-  #The problem is here: I create the method checked_out but at line 33 gives a error of undefined method
-  def checked_out
-    @checked_out = false
+#This method is used to set the status of the book: True= book off, False= book on.
+  def self.checked_out
+    @@checked_out = false
   end
 
 end
@@ -49,7 +58,6 @@ book1 = Book.new("The Wind in the Willows", "Kenneth Grahame")
 book2 = Book.new("The Hobbit", "J. R. R. Tolkien")
 book3 = Book.new("Clear Waters Rising", "Nicholas Cane")
 # add those Books to the Library
-book1.display
 
 lib.add(book1)
 lib.add(book2)
