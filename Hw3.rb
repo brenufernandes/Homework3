@@ -1,5 +1,5 @@
 =begin
-Breno Fernandes de Andrade - CS270. Assignment #2
+Breno Fernandes de Andrade - CS270. Assignment #3
 Description: Checkout of books using class concept
 input: Book's title and name
 Output: Checkout book's name
